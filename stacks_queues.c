@@ -82,7 +82,7 @@ t_list	*lst_pop_last(t_list **head)
 	t_list *tmp;
 	t_list *iterator;
 
-	if (!head)
+	if (!head || !(*head))
 		return (NULL);
 	iterator = *head;
 	if (!(*head)->next)
