@@ -18,8 +18,6 @@ void	lst_del_one(t_list *node)
 		return ;
 	if (node->content)
 		free(node->content);
-	node->content = NULL;
-	node->size = 0;
 	free(node);
 }
 
